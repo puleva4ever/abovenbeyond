@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+@font-face{
+    font-family:titleFont;
+    src:url(../font/limousines/Champagne%20&%20Limousines.ttf);
+}
+
+@font-face{
+	font-family:menuFont;
+	src:url(../font/neou/Neou-Thin.otf);
+}	
+
+@font-face{
+	font-family:contentFont;
+	src:url(../font/fontenac/Frontenac.otf);
+}	
+
+/* GENERAL */
+
+html{
+	box-sizing:border-box;
+}
+
+*, *:before, *:after{
+	-moz-box-sizing:inherit;
+	-webkit-box-sizing:inherit;
+	box-sizing:inherit;
+}
+	
+body{
+	background-image:url(../images/mainBG.png);
+	background-size:100%;
+	margin:0px;
+	padding:0px;
+	height:100%;
+	width:100%;	
+	box-sizing:border-box;
+}
+
+a{
+	text-decoration:none;
+	color:black;
+}
+
+
+/* MAIN TITLE */
+
+.title{
+	font-family:titleFont;
+	font-size:90px;
+	text-align:center;
+	color:white;
+	margin:0;
+	text-shadow:0px 0px 10px white;
+	width:100%;
+	transition:all 0.3s ease 0s;
+}
+
+.title:hover{
+	text-shadow:0px 0px 8px #00FFCC;	
+}
+
+
+/* TOP MENU */
+
+nav{
+	width:100%;
+	margin-bottom:70px;
+	transition:all 0.3s ease 0s;
+}
+
+nav:hover{
+	width:99.9%;
+}
+
+nav ul{
+	text-decoration:none;
+	list-style:none;
+	padding:30px;
+	background-color:#333;
+	text-align:center;
+	border-top:3px solid black;
+	border-bottom:3px solid black;
+	transition:all 0.3s ease 0s;
+}
+
+nav ul:hover{
+	border:2px solid #F58716;
+	background-color:#F58716;
+	transform:rotate(1deg);	
+	
+}
+
+nav li{
+	display:inline-block;
+}
+
+nav li{
+	color:black;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	border-right:2px solid black;
+	border-left:2px solid black;
+	border-top:2px solid #333;
+	border-bottom:2px solid #333;
+	margin-right:5px;
+	text-align:center;
+	font-family:menuFont;
+	font-size:20px;
+	font-weight:bold;
+	cursor:pointer;
+	transition:all 0.2s ease 0s;	
+}
+
+nav li:hover{
+	border:2px solid black;
+	border-radius:20px 0px 20px 0px;
+	box-shadow:0px 0px 10px black;
+	text-shadow:0px 0px 2px black;
+	color:black;
+}
+
+
+/* CONTENT */
+
+.content{
+	color:white;
+	padding-left:30px;
+	padding-right:30px;
+	font-family:contentFont;
+	text-shadow:0px 0px 5px black;
+	font-size:20px;
+	text-align:justify;
+	border-left:1px solid black;
+	border-right:1px solid black;
+	margin-left:150px;
+	margin-right:150px;
+}
+
+.parts{
+	border-left:1px solid black;
+	border-right:1px solid black;
+	margin-left:150px;
+	margin-right:150px;
+	padding-left:30px;
+	padding-right:30px;
+	opacity:0.5;
+	color:white;
+	transition:all 0.2s ease 0s;
+}
+
+.parts:hover{
+	opacity:1;
+	color:white;
+}
+
+.subtitle{
+	font-family:contentFont;
+	text-shadow:0px 0px 5px black;
+	font-size:70px;
+	text-align:left;
+	letter-spacing:20px;
+}
+
+#abgt100{
+	width:100%;
+	height:100%;
+}
+
+
+
+/* MULTIMEDIA */
+
+table{
+	width:100%;
+	margin-bottom:50px;
+}
+
+.multi{
+	text-align:center;	
+}
+
+#videos, #musica{
+	box-shadow:0px 0px 60px black;
+	cursor:pointer;
+	transition: all 0.1s ease 0s;
+}
+
+#musica:hover, #videos:hover{
+	box-shadow:0px 0px 40px #F58716;
+}
+
+#videos_title, #musica_title{
+	width:50%;
+	height:50%;
+	letter-spacing:1x;
+	transition: all 0.2s ease 0s;
+}
+
+#musica_content, #videos_content{
+	display:none;
+}
+
+#musica_content iframe, #videos_content iframe{
+	margin-bottom:30px;
+}
+
+.multi-toggle{
+	letter-spacing:5px;
+	font-weight:bold;
+}
+
+
+/* DISCOGRAFIA */
+
+#disco-table img{
+	margin-bottom:20px;
+	cursor:crosshair;
+	transition:all 0.2s ease;
+}
+
+#disco-table img:hover{
+	transform:scale(1.1,1.1);
+}
+
+#disco-table iframe{
+	margin-bottom:50px;
+}
+
+#disco-table td{
+	width:300px;
+	height:300px;
+	margin:10px;
+	text-align:center;
+}
+
+
+
+
+/* CONTACTO */
+
+#contact-table td{
+	text-align:center;
+}
+
+#contact-table img{
+	transition:all 0.2s ease;
+}
+
+#contact-table td img:hover{
+	transform:scale(1.1,1.1);
+}
+
+#td_bg{
+	background-image:url(../images/mail.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	text-shadow:0px 0px 20px black;
+	height:300px;
+	width:300px;
+}
+
+#td_bg a{
+	color:white;
+	transition:all 0.1s ease;
+}
+
+#td_bg a:hover{
+	font-size:1.2em;
+}
+
+
+
+
+
+
+
+
+
+
